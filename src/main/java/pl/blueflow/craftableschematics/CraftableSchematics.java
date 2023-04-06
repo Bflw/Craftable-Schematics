@@ -11,7 +11,6 @@ import org.bukkit.inventory.recipe.CraftingBookCategory;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 import pl.blueflow.craftableschematics.command.ItemSerializerCommand;
 import pl.blueflow.craftableschematics.config.Configuration;
 import pl.blueflow.craftableschematics.listener.SchematicPlaceListener;
