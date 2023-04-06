@@ -16,9 +16,9 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.NotNull;
 import pl.blueflow.craftableschematics.config.Configuration;
-import pl.blueflow.craftableschematics.json.JsonPrettyPrinter;
 import pl.blueflow.craftableschematics.json.ItemStackDeserializer;
 import pl.blueflow.craftableschematics.json.ItemStackSerializer;
+import pl.blueflow.craftableschematics.json.JsonPrettyPrinter;
 import pl.blueflow.craftableschematics.json.MaterialDeserializer;
 
 import java.io.IOException;
@@ -73,7 +73,8 @@ public final class CraftableSchematicsBootstrapper implements PluginBootstrap {
 				}
 			} catch(final IOException ex) {
 				throw new RuntimeException(
-					String.format("Failed to write default schematics to %s", schematicsPath.toAbsolutePath()));
+					String.format("Failed to write default schematics to %s", schematicsPath.toAbsolutePath()),
+					ex);
 			}
 		}
 		
