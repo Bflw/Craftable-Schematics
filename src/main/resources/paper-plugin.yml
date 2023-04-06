@@ -1,0 +1,11 @@
+name: Craftable-Schematics
+description: Allows you to create items that when placed will build a schematic.
+version: ${version}
+api-version: '1.19'
+main: pl.blueflow.craftableschematics.CraftableSchematics
+bootstrapper: pl.blueflow.craftableschematics.CraftableSchematicsBootstrapper
+
+dependencies:
+    - name: WorldEdit
+      required: true
+      bootstrap: false
